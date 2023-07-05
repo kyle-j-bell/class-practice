@@ -12,6 +12,7 @@ class Person {
   }
 
   //A static mmethod that checks if person is an Array and if each element is an instance of the Person class, then calls the introduce method on each element of person.
+  //An error is thrown is person is not an Array, or if an element is not an instance of Person.
   static introducePeople(person) {
     if (!Array.isArray(person)) {
       throw new Error("introducePeople only takes an array as an argument.");
